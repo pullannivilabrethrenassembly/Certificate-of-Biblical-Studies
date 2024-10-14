@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificate of Biblical Studies (C.B.S)</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Custom styles */
+      body {
+        background-color: #f4f7fa; /* Light background for better contrast */
+      }
+      .header {
+        background-color: #316ea4; /* Changed header color */
+        color: white;
+      }
+      .info-box {
+        background-color: #ffffff; /* White background for info boxes */
+        border: 1px solid #cfd8dc; /* Soft border */
+        border-radius: 0.5rem; /* Rounded corners */
+        padding: 1.5rem; /* Adjusted padding */
+        margin-bottom: 1.5rem; /* Spacing between boxes */
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* No shadow before hover */
+        transition: transform 0.3s, box-shadow 0.3s; /* Transition effects for transform and shadow */
+        cursor: pointer; /* Pointer cursor for info boxes */
+      }
+      .info-box:hover {
+        transform: translateY(-5px); /* Slight lift on hover */
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+      }
+      .button {
+        display: inline-block;
+        font-weight: 600;
+        padding: 12px 24px; /* Consistent padding */
+        border-radius: 0.5rem; /* Rounded corners */
+        text-align: center;
+        text-transform: uppercase; /* Uppercase text */
+        letter-spacing: 0.5px; /* Spacing for modern look */
+        transition: all 0.3s ease; /* Smooth transition for hover effects */
+        cursor: pointer; /* Pointer cursor for buttons */
+        margin: 0 8px; /* Spacing between buttons */
+      }
+      .button-view {
+        background-color: #00796b; /* Teal background for 'View Brochure' */
+        color: white; /* White text */
+        border: 2px solid #004d40; /* Darker teal border */
+        margin-top: 20px; /* Added top margin */
+        margin-bottom: 20px; /* Added bottom margin */
+      }
+      .button-view:hover {
+        background-color: #004d40; /* Darker teal on hover */
+        border-color: #00796b; /* Lighter teal border on hover */
+      }
+      .button-register {
+        background-color: #4caf50; /* Attractive green for 'Register Now' */
+        color: white; /* White text */
+        border: 2px solid #388e3c; /* Darker green border */
+        margin-top: 10px; /* Adjusted top margin */
+        margin-bottom: 20px; /* Added bottom margin */
+        padding: 14px 28px; /* Increased padding for a better look */
+        font-size: 1.1rem; /* Slightly larger font size */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+      }
+      .button-register:hover {
+        background-color: #388e3c; /* Darker green on hover */
+        border-color: #4caf50; /* Lighter green border on hover */
+        transform: translateY(-2px); /* Lift effect on hover */
+      }
+      .responsive-iframe {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 40%; /* Default for larger screens */
+        margin: 0 auto; /* Center iframe */
+      }
+      .responsive-iframe iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      @media (min-width: 640px) {
+        .info-box {
+          margin-bottom: 1rem; /* Adjusted bottom margin for small screens */
+        }
+      }
+      @media (min-width: 768px) {
+        .button {
+          margin: 0 10px; /* Adjusted spacing for buttons on larger screens */
+        }
+      }
+      /* Adjust iframe height for mobile view */
+      @media (max-width: 640px) {
+        .responsive-iframe {
+          padding-bottom: 60%; /* Increased height for mobile view */
+        }
+        .certificate-heading {
+          font-size: 1.5rem; /* Adjusted font size for smaller screens */
+        }
+        .header h1 {
+          font-size: 1.8rem; /* Smaller font size for mobile header */
+        }
+        .header img {
+          height: 100px; /* Increased logo size for mobile */
+          width: auto;
+        }
+        .button-register {
+          padding: 10px 20px; /* Adjusted button padding for smaller screens */
+          font-size: 1rem; /* Adjusted font size for buttons */
+        }
+        .button-view {
+          padding: 10px 20px; /* Adjusted button padding for smaller screens */
+          font-size: 1rem; /* Adjusted font size for buttons */
+        }
+        .text-center p {
+          font-size: 0.875rem; /* Adjusted text size */
+        }
+        .text-center .font-bold {
+          font-size: 1.5rem; /* Adjusted heading size */
+        }
+      }
+    </style>
+  </head>
+  <body class="font-sans">
+    <header class="header py-8">
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center justify-center md:justify-center"
+      >
+        <img src="logo.png" alt="Logo" class="h-32 w-auto mb-4 md:mb-0" />
+        <!-- Increased logo size -->
+        <div class="text-center md:text-center md:ml-4">
+          <h1 class="text-4xl font-bold">
+            Trivandrum Brethren Bible Training Institute
+          </h1>
+          <p class="text-lg italic">
+            A Ministry of Pullannivila Brethren Assembly, TVM
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+      <h2
+        class="certificate-heading text-3xl font-bold text-center text-teal-800 mb-8"
+      >
+        Certificate of Biblical Studies (C. B. S)
+      </h2>
+
+      <!-- Section 1: Registration Closes -->
+      <div class="text-center mb-8 py-6">
+        <!-- Added vertical padding -->
+        <p class="text-base sm:text-lg text-gray-600 mb-1">
+          Registration Closes:
+        </p>
+        <p class="text-lg sm:text-2xl font-bold text-black mb-2">
+          November 22, 2024
+        </p>
+        <div class="text-lg font-bold text-red-600 mb-4" id="countdown">
+          40d 20h 48m 52s
+        </div>
+        <a
+          href="https://forms.gle/FyUEKFSCsMCUdX2H7"
+          class="button button-register"
+          target="_blank"
+        >
+          Register Now
+        </a>
+      </div>
+
+      <!-- Section 2: Course Starts On -->
+      <div class="text-center mb-8">
+        <p class="text-base sm:text-lg text-gray-600 mb-1">Course Starts on:</p>
+        <p class="text-lg sm:text-2xl font-bold">December 2, 2024</p>
+        <div class="flex flex-col sm:flex-row justify-center mb-8">
+          <a
+            href="https://drive.google.com/file/d/10SETUl4qq3X4mpoILz4nFG_XsO5FLmaS/view?usp=sharing"
+            class="button button-view"
+            >View Brochure</a
+          >
+        </div>
+      </div>
+
+      <!-- Heading for YouTube Video Section -->
+      <h2 class="text-2xl sm:text-3xl font-bold text-center text-teal-800 mb-8">
+        Watch the Video for More Information
+      </h2>
+
+      <!-- Embedded YouTube Video -->
+      <div class="responsive-iframe mb-8">
+        <iframe
+          src="https://www.youtube.com/embed/UtIdVw5OR9k"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </main>
+
+    <footer class="footer py-6">
+      <div class="container mx-auto text-center">
+        <p class="text-sm">
+          &copy; 2024 Trivandrum Brethren Bible Training Institute. All Rights
+          Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Countdown function
+      function updateCountdown() {
+        const countDownDate = new Date("November 22, 2024 00:00:00").getTime();
+        const now = new Date().getTime();
+        const distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the countdown div
+        document.getElementById("countdown").innerHTML =
+          days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        // If the countdown is finished, display a message
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("countdown").innerHTML =
+            "Registration Closed";
+        }
+      }
+
+      // Update the countdown every second
+      const x = setInterval(updateCountdown, 1000);
+    </script>
+  </body>
+</html>
